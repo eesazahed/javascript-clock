@@ -1,0 +1,46 @@
+body {
+  font-family: "Rockwell", monospace;
+  background: black;
+  animation: changecolors 30s infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0%;
+  padding: 0%;
+}
+
+#clock {
+  font-size: 7rem;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes changecolors {
+  0% {
+    color: red;
+  }
+  25% {
+    color: yellow;
+  }
+  50% {
+    color: green;
+  }
+  75% {
+    color: blue;
+  }
+  100% {
+    color: red;
+  }
+}
+
+b {
+  animation: blink 1s infinite;
+}
